@@ -9,11 +9,10 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-source-bigcommerce',
+      resolve: 'gatsby-source-bigcommerce-crosslinked',
       options: {
         // REQUIRED
         clientId: process.env.API_CLIENT_ID,
-        secret: process.env.API_SECRET,
         accessToken: process.env.API_TOKEN,
         storeHash: process.env.API_STORE_HASH,
         endpoints: {
